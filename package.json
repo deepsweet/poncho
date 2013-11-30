@@ -1,0 +1,32 @@
+{
+  "name": "poncho",
+  "version": "0.0.0",
+  "description": "Client-side JS code coverage using PhantomJS and Blanket",
+  "keywords": [ "phantomjs", "blanket", "coverage", "coveralls" ],
+  "homepage": "https://github.com/deepsweet/poncho",
+  "author": "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deepsweet/poncho.git"
+  },
+  "bin": {
+    "poncho": "./bin/poncho"
+  },
+  "dependencies": {
+    "commander": "",
+    "phantomjs": "",
+    "blanket": "",
+    "node-static": ""
+  },
+  "devDependencies": {
+    "eslint": "",
+    "jscs": ""
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "licenses": [{
+      "type": "MIT",
+      "url": "https://github.com/deepsweet/poncho/blob/master/LICENSE"
+  }]
+}

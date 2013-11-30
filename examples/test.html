@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Mocha Test</title>
+    <base href="../node_modules/"/>
+    <link rel="stylesheet" href="mocha/mocha.css"/>
+</head>
+
+<body>
+    <div id="mocha"></div>
+
+    <!-- mocha -->
+    <script src="mocha/mocha.js"></script>
+    <script>mocha.setup('bdd');</script>
+
+    <!-- blanket -->
+    <script src="blanket/dist/qunit/blanket.min.js"></script>
+    <script src="../lib/adapters/mocha.js"></script>
+    <script>
+        if(window._phantom) {
+            blanket.options('reporter', '../lib/reporters/json.js');
+        }
+    </script>
+
+    <!-- target -->
+    <script src="../examples/script.js" data-cover></script>
+
+    <!-- test -->
+    <script src="../examples/test.js"></script>
+
+    <!-- run mocha -->
+    <script>mocha.run()</script>
+</body>
