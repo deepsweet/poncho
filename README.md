@@ -60,7 +60,7 @@ All you need to do is add `data-cover` attribute to the target script tag:
 …and run Poncho:
 
 ```sh
-$ poncho --reporter num test/test.html
+$ poncho test/test.html
 ```
 
 
