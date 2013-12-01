@@ -1,6 +1,6 @@
 {
   "name": "poncho",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Client-side JS code coverage using PhantomJS, Mocha and Blanket",
   "keywords": [ "phantomjs", "blanket", "coverage", "coveralls" ],
   "homepage": "https://github.com/deepsweet/poncho",
