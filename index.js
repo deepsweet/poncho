@@ -1,3 +1,5 @@
+'use strict';
+
 var http = require('http'),
     path = require('path'),
     Static = require('node-static'),
@@ -17,19 +19,21 @@ module.exports = function(params, callback) {
     // create HTTP server
     server = http.createServer(function(req, res) {
 
-        var data = '';
+        var post = '';
 
         // if coverage was requested – collect POST data…
         if(req.url === '/coverage') {
             req.on('data', function(chunk) {
-                data += chunk;
+                post += chunk;
             });
         }
 
         req.on('end', function() {
-            if(data) {
+            if(post) {
                 // …and callback it
-                callback(data);
+                post = JSON.parse(post);
+                callback(post.data);
+
                 server.close();
             }
 
@@ -51,6 +55,8 @@ module.exports = function(params, callback) {
             params.file,
             // server port
             params.port,
+            // reporter
+            params.reporter
         ]);
 
     // phantomjs.stderr.pipe(process.stdout);
@@ -59,6 +65,7 @@ module.exports = function(params, callback) {
     // bind any PhantomJS errors to current process
     phantomjs.on('exit', function(code) {
         if(code === 127) {
+            /*eslint no-console:0*/
             console.error('PhantomJS is not installed?');
         }
 

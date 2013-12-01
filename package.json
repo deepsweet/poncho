@@ -1,6 +1,6 @@
 {
   "name": "poncho",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Client-side JS code coverage using PhantomJS, Mocha and Blanket",
   "keywords": [ "phantomjs", "blanket", "coverage", "coveralls" ],
   "homepage": "https://github.com/deepsweet/poncho",
@@ -13,17 +13,20 @@
     "poncho": "./bin/poncho"
   },
   "dependencies": {
-    "commander": "",
-    "phantomjs": "",
-    "blanket": "",
-    "node-static": ""
+    "commander": "~2.1.0",
+    "phantomjs": "~1.9.2-4",
+    "blanket": "~1.1.5",
+    "node-static": "~0.7.2"
   },
   "devDependencies": {
-    "eslint": "",
-    "jscs": ""
+    "eslint": "~0.1.3",
+    "jscs": "~1.0.13"
   },
   "scripts": {
     "test": "make test"
+  },
+  "engines": {
+    "node": ">=0.8.0"
   },
   "licenses": [{
       "type": "MIT",
