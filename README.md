@@ -1,12 +1,15 @@
-### PhantomJS + Mocha + Blanket = Poncho
+## PhantomJS + Mocha + Blanket = Poncho
+[![Build Status](https://secure.travis-ci.org/deepsweet/poncho.png)](https://travis-ci.org/deepsweet/poncho)
 
 Client-side JS code coverage using [PhantomJS](https://github.com/ariya/phantomjs), [Mocha](https://github.com/visionmedia/mocha) and [Blanket](https://github.com/alex-seville/blanket).
+
 
 ### Install
 
 ```sh
 $ npm i --save-dev poncho
 ```
+
 
 ### Usage
 
@@ -50,6 +53,7 @@ All you need to do is add `data-cover` attribute to the target script tag:
 $ poncho --reporter num test/test.html
 ```
 
+
 ### Send data to [coveralls.io](https://coveralls.io/)
 
 Install [node-coveralls](https://github.com/cainus/node-coveralls):
@@ -62,6 +66,7 @@ $ npm i --save-dev coveralls
 ```sh
 $ poncho --reporter lcov test/test.html | coveralls
 ```
+
 
 ### How it works?
 
