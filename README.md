@@ -1,4 +1,4 @@
-## PhantomJS + Mocha + Blanket = Poncho
+## Poncho
 [![Build Status](https://secure.travis-ci.org/deepsweet/poncho.png)](https://travis-ci.org/deepsweet/poncho) <a href="http://badge.fury.io/js/poncho"><img src="https://badge.fury.io/js/poncho@2x.png" alt="NPM version" height="18"></a> [![Dependency Status](https://gemnasium.com/deepsweet/poncho.png)](https://gemnasium.com/deepsweet/poncho) [![license MIT](http://b.repl.ca/v1/license-MIT-brightgreen.png)](https://github.com/deepsweet/poncho/blob/master/LICENSE)
 
 Client-side JS code coverage using [PhantomJS](https://github.com/ariya/phantomjs), [Mocha](https://github.com/visionmedia/mocha) and [Blanket](https://github.com/alex-seville/blanket).
