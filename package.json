@@ -9,9 +9,14 @@
     "type": "git",
     "url": "git@github.com:deepsweet/poncho.git"
   },
+  "bugs": {
+    "url": "https://github.com/deepsweet/poncho/issues",
+    "email": "kir@soulshine.in"
+  },
   "bin": {
     "poncho": "./bin/poncho"
   },
+  "main": "./index.js",
   "dependencies": {
     "commander": "~2.1.0",
     "phantomjs": "~1.9.2-4",
