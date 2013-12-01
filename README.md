@@ -10,6 +10,16 @@ Client-side JS code coverage using [PhantomJS](https://github.com/ariya/phantomj
 $ npm i --save-dev poncho
 ```
 
+```
+Usage: poncho [options] <file>
+
+Options:
+
+  -h, --help             output usage information
+  -V, --version          output the version number
+  -R, --reporter [type]  reporter: plain (default) | lcov | json
+```
+
 
 ### Usage
 
