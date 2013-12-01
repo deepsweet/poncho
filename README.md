@@ -2,13 +2,13 @@
 
 Client-side JS code coverage using [PhantomJS](https://github.com/ariya/phantomjs), [Mocha](https://github.com/visionmedia/mocha) and [Blanket](https://github.com/alex-seville/blanket).
 
-#### Install
+### Install
 
 ```sh
 $ npm i --save-dev poncho
 ```
 
-#### Usage
+### Usage
 
 Let's imagine that you already have PhantomJS + Mocha client-side tests (with [mocha-phantomjs](https://github.com/metaskills/mocha-phantomjs), for example), something like this `test/test.html`:
 
@@ -50,7 +50,7 @@ All you need to do is add `data-cover` attribute to the target script tag:
 $ poncho --reporter num test/test.html
 ```
 
-#### Send data to [coveralls.io](https://coveralls.io/)
+### Send data to [coveralls.io](https://coveralls.io/)
 
 Install [node-coveralls](https://github.com/cainus/node-coveralls):
 
@@ -63,6 +63,6 @@ $ npm i --save-dev coveralls
 $ poncho --reporter lcov test/test.html | coveralls
 ```
 
-#### How it works?
+### How it works?
 
 You don't want to know. Seriosly. It's so hacky way that it can cause [the blood from your eyes](http://funkyimg.com/i/EdqD.gif).
