@@ -1,3 +1,3 @@
-### PhantomJS + Blanket = Poncho
+### PhantomJS + Mocha + Blanket = Poncho
 
 more info coming soon.

@@ -41,18 +41,25 @@ module.exports = function(params, callback) {
 
         // spawn PhantomJS with arguments
     var phantomjs = spawn('phantomjs', [
+            // bridge file
             path.resolve(__dirname, './lib/bridge.js'),
-            params.filename,
-            params.port
+            // poncho relative dir
+            path.relative(path.dirname(params.file), __dirname),
+            // inject file
+            path.resolve(__dirname, './lib/inject.html'),
+            // test file
+            params.file,
+            // server port
+            params.port,
         ]);
 
     // phantomjs.stderr.pipe(process.stdout);
-    // phantomjs.stdout.pipe(process.stdout);
+    phantomjs.stdout.pipe(process.stdout);
 
     // bind any PhantomJS errors to current process
     phantomjs.on('exit', function(code) {
         if(code === 127) {
-            console.error('Perhaps phantomjs is not installed?\n');
+            console.error('PhantomJS is not installed?');
         }
 
         if(code > 0) {

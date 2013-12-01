@@ -1,7 +1,7 @@
 {
   "name": "poncho",
   "version": "0.0.0",
-  "description": "Client-side JS code coverage using PhantomJS and Blanket",
+  "description": "Client-side JS code coverage using PhantomJS, Mocha and Blanket",
   "keywords": [ "phantomjs", "blanket", "coverage", "coveralls" ],
   "homepage": "https://github.com/deepsweet/poncho",
   "author": "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
