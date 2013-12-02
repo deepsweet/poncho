@@ -23,7 +23,7 @@ Options:
 
 ### Usage
 
-Let's imagine that you already have PhantomJS + Mocha client-side tests (with [mocha-phantomjs](https://github.com/metaskills/mocha-phantomjs), for example), something like this `test/test.html`:
+Let's imagine that you already have Mocha client-side tests, something like this `test/test.html`:
 
 ```html
 <!DOCTYPE html>
@@ -47,7 +47,7 @@ Let's imagine that you already have PhantomJS + Mocha client-side tests (with [m
     <script src="test.js"></script>
 
     <!-- run -->
-    <script>(window.mochaPhantomJS || mocha).run();</script>
+    <script>mocha.run();</script>
 </body>
 ```
 
