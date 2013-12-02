@@ -23,7 +23,7 @@ Options:
 
 ### Usage
 
-Let's imagine that you already have Mocha client-side tests, something like this `test/test.html`:
+Let's imagine that you already have Mocha client-side tests, something like this:
 
 ```html
 <!DOCTYPE html>
@@ -60,7 +60,7 @@ All you need to do is add `data-cover` attribute to the target script tag:
 …and run Poncho:
 
 ```sh
-$ poncho test/test.html
+$ poncho test.html
 ```
 
 
