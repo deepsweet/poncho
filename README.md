@@ -47,7 +47,7 @@ Let's imagine that you already have PhantomJS + Mocha client-side tests (with [m
     <script src="test.js"></script>
 
     <!-- run -->
-    <script>window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();</script>
+    <script>(window.mochaPhantomJS || mocha)run();</script>
 </body>
 ```
 
