@@ -74,7 +74,7 @@ $ npm i --save-dev coveralls
 …and pipe Poncho's `lcov` reporter to it:
 
 ```sh
-$ poncho --reporter lcov test/test.html | coveralls
+$ poncho --reporter lcov test.html | coveralls
 ```
 
 
